@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D437AF728266379008F814F /* LegoRenderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AF628266379008F814F /* LegoRenderProtocol.swift */; };
+		3D437AF9282663B9008F814F /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AF8282663B9008F814F /* CellProtocol.swift */; };
+		3D437AFF2826640C008F814F /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AFE2826640C008F814F /* ReusableViewProtocol.swift */; };
+		3D437B03282671B0008F814F /* VCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B02282671B0008F814F /* VCViewModel.swift */; };
+		3D437B052827446F008F814F /* LegoRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B042827446F008F814F /* LegoRender.swift */; };
+		3D437B07282746D7008F814F /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B06282746D7008F814F /* StateObject.swift */; };
+		3D437B09282748C8008F814F /* LegoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B08282748C8008F814F /* LegoContainer.swift */; };
+		3D437B0B28274988008F814F /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0A28274988008F814F /* ObservableObject.swift */; };
+		3D437B0D28275FEC008F814F /* LegoPublished.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0C28275FEC008F814F /* LegoPublished.swift */; };
+		3D437B0F282764BE008F814F /* JYPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0E282764BE008F814F /* JYPerson.swift */; };
+		3D6D25F2282602C0008A7D22 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F1282602C0008A7D22 /* Section.swift */; };
+		3D6D25F428261B2A008A7D22 /* Lego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F328261B2A008A7D22 /* Lego.swift */; };
+		3D6D25F628261BAA008A7D22 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F528261BAA008A7D22 /* Item.swift */; };
+		3D6D25F828261BC2008A7D22 /* ItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */; };
+		3D6D260D28262148008A7D22 /* SectionHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */; };
+		3D6D260F282621A5008A7D22 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */; };
+		3D6D2611282643C0008A7D22 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D2610282643C0008A7D22 /* CollectionViewCell.swift */; };
+		3D6D261428266251008A7D22 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D261328266251008A7D22 /* CellViewModelProtocol.swift */; };
+		3D6D2616282662C4008A7D22 /* ReusableViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D2615282662C4008A7D22 /* ReusableViewModelProtocol.swift */; };
+		3DF465AF2824B67600A2AC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465AE2824B67600A2AC73 /* AppDelegate.swift */; };
+		3DF465B12824B67600A2AC73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465B02824B67600A2AC73 /* SceneDelegate.swift */; };
+		3DF465B32824B67600A2AC73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465B22824B67600A2AC73 /* ViewController.swift */; };
+		3DF465B62824B67600A2AC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF465B42824B67600A2AC73 /* Main.storyboard */; };
+		3DF465B82824B67800A2AC73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF465B72824B67800A2AC73 /* Assets.xcassets */; };
+		3DF465BB2824B67800A2AC73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF465B92824B67800A2AC73 /* LaunchScreen.storyboard */; };
+		3DF465C32824BA5100A2AC73 /* SectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465C22824BA5100A2AC73 /* SectionBuilder.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D437AF628266379008F814F /* LegoRenderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoRenderProtocol.swift; sourceTree = "<group>"; };
+		3D437AF8282663B9008F814F /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
+		3D437AFE2826640C008F814F /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		3D437B02282671B0008F814F /* VCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCViewModel.swift; sourceTree = "<group>"; };
+		3D437B042827446F008F814F /* LegoRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoRender.swift; sourceTree = "<group>"; };
+		3D437B06282746D7008F814F /* StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject.swift; sourceTree = "<group>"; };
+		3D437B08282748C8008F814F /* LegoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoContainer.swift; sourceTree = "<group>"; };
+		3D437B0A28274988008F814F /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
+		3D437B0C28275FEC008F814F /* LegoPublished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoPublished.swift; sourceTree = "<group>"; };
+		3D437B0E282764BE008F814F /* JYPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYPerson.swift; sourceTree = "<group>"; };
+		3D6D25F1282602C0008A7D22 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		3D6D25F328261B2A008A7D22 /* Lego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lego.swift; sourceTree = "<group>"; };
+		3D6D25F528261BAA008A7D22 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilder.swift; sourceTree = "<group>"; };
+		3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderViewModel.swift; sourceTree = "<group>"; };
+		3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
+		3D6D2610282643C0008A7D22 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3D6D261328266251008A7D22 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
+		3D6D2615282662C4008A7D22 /* ReusableViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewModelProtocol.swift; sourceTree = "<group>"; };
+		3DF465AB2824B67600A2AC73 /* JYLegoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYLegoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF465AE2824B67600A2AC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DF465B02824B67600A2AC73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DF465B22824B67600A2AC73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DF465B52824B67600A2AC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DF465B72824B67800A2AC73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DF465BA2824B67800A2AC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DF465BC2824B67800A2AC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF465C22824BA5100A2AC73 /* SectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBuilder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF465A82824B67500A2AC73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D6D26122826618E008A7D22 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3D6D25F328261B2A008A7D22 /* Lego.swift */,
+				3D6D25F1282602C0008A7D22 /* Section.swift */,
+				3DF465C22824BA5100A2AC73 /* SectionBuilder.swift */,
+				3D6D261328266251008A7D22 /* CellViewModelProtocol.swift */,
+				3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */,
+				3D437AF8282663B9008F814F /* CellProtocol.swift */,
+				3D437AFE2826640C008F814F /* ReusableViewProtocol.swift */,
+				3D6D2615282662C4008A7D22 /* ReusableViewModelProtocol.swift */,
+				3D437AF628266379008F814F /* LegoRenderProtocol.swift */,
+				3D437B042827446F008F814F /* LegoRender.swift */,
+				3D437B08282748C8008F814F /* LegoContainer.swift */,
+				3D437B06282746D7008F814F /* StateObject.swift */,
+				3D437B0A28274988008F814F /* ObservableObject.swift */,
+				3D437B0C28275FEC008F814F /* LegoPublished.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3DF465A22824B67500A2AC73 = {
+			isa = PBXGroup;
+			children = (
+				3DF465AD2824B67600A2AC73 /* JYLegoKit */,
+				3DF465AC2824B67600A2AC73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF465AC2824B67600A2AC73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF465AB2824B67600A2AC73 /* JYLegoKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DF465AD2824B67600A2AC73 /* JYLegoKit */ = {
+			isa = PBXGroup;
+			children = (
+				3DF465AE2824B67600A2AC73 /* AppDelegate.swift */,
+				3DF465B02824B67600A2AC73 /* SceneDelegate.swift */,
+				3DF465B22824B67600A2AC73 /* ViewController.swift */,
+				3D437B02282671B0008F814F /* VCViewModel.swift */,
+				3D437B0E282764BE008F814F /* JYPerson.swift */,
+				3D6D26122826618E008A7D22 /* Core */,
+				3D6D25F528261BAA008A7D22 /* Item.swift */,
+				3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */,
+				3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */,
+				3D6D2610282643C0008A7D22 /* CollectionViewCell.swift */,
+				3DF465B42824B67600A2AC73 /* Main.storyboard */,
+				3DF465B72824B67800A2AC73 /* Assets.xcassets */,
+				3DF465B92824B67800A2AC73 /* LaunchScreen.storyboard */,
+				3DF465BC2824B67800A2AC73 /* Info.plist */,
+			);
+			path = JYLegoKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF465AA2824B67500A2AC73 /* JYLegoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF465BF2824B67800A2AC73 /* Build configuration list for PBXNativeTarget "JYLegoKit" */;
+			buildPhases = (
+				3DF465A72824B67500A2AC73 /* Sources */,
+				3DF465A82824B67500A2AC73 /* Frameworks */,
+				3DF465A92824B67500A2AC73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYLegoKit;
+			productName = JYLegoKit;
+			productReference = 3DF465AB2824B67600A2AC73 /* JYLegoKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF465A32824B67500A2AC73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					3DF465AA2824B67500A2AC73 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3DF465A62824B67500A2AC73 /* Build configuration list for PBXProject "JYLegoKit" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DF465A22824B67500A2AC73;
+			productRefGroup = 3DF465AC2824B67600A2AC73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF465AA2824B67500A2AC73 /* JYLegoKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF465A92824B67500A2AC73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DF465BB2824B67800A2AC73 /* LaunchScreen.storyboard in Resources */,
+				3DF465B82824B67800A2AC73 /* Assets.xcassets in Resources */,
+				3DF465B62824B67600A2AC73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF465A72824B67500A2AC73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D437B03282671B0008F814F /* VCViewModel.swift in Sources */,
+				3D437AFF2826640C008F814F /* ReusableViewProtocol.swift in Sources */,
+				3D6D260F282621A5008A7D22 /* CollectionReusableView.swift in Sources */,
+				3D6D2616282662C4008A7D22 /* ReusableViewModelProtocol.swift in Sources */,
+				3DF465B32824B67600A2AC73 /* ViewController.swift in Sources */,
+				3D6D25F428261B2A008A7D22 /* Lego.swift in Sources */,
+				3D437B052827446F008F814F /* LegoRender.swift in Sources */,
+				3D6D25F628261BAA008A7D22 /* Item.swift in Sources */,
+				3D437B07282746D7008F814F /* StateObject.swift in Sources */,
+				3D6D260D28262148008A7D22 /* SectionHeaderViewModel.swift in Sources */,
+				3D437AF728266379008F814F /* LegoRenderProtocol.swift in Sources */,
+				3D437B0D28275FEC008F814F /* LegoPublished.swift in Sources */,
+				3D6D2611282643C0008A7D22 /* CollectionViewCell.swift in Sources */,
+				3D437B09282748C8008F814F /* LegoContainer.swift in Sources */,
+				3DF465C32824BA5100A2AC73 /* SectionBuilder.swift in Sources */,
+				3D6D261428266251008A7D22 /* CellViewModelProtocol.swift in Sources */,
+				3D437B0B28274988008F814F /* ObservableObject.swift in Sources */,
+				3D437B0F282764BE008F814F /* JYPerson.swift in Sources */,
+				3DF465AF2824B67600A2AC73 /* AppDelegate.swift in Sources */,
+				3DF465B12824B67600A2AC73 /* SceneDelegate.swift in Sources */,
+				3D6D25F2282602C0008A7D22 /* Section.swift in Sources */,
+				3D6D25F828261BC2008A7D22 /* ItemBuilder.swift in Sources */,
+				3D437AF9282663B9008F814F /* CellProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DF465B42824B67600A2AC73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF465B52824B67600A2AC73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DF465B92824B67800A2AC73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DF465BA2824B67800A2AC73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DF465BD2824B67800A2AC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DF465BE2824B67800A2AC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DF465C02824B67800A2AC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7H35643SZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JYLegoKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmart.lego.JYLegoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DF465C12824B67800A2AC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7H35643SZ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JYLegoKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitmart.lego.JYLegoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF465A62824B67500A2AC73 /* Build configuration list for PBXProject "JYLegoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF465BD2824B67800A2AC73 /* Debug */,
+				3DF465BE2824B67800A2AC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF465BF2824B67800A2AC73 /* Build configuration list for PBXNativeTarget "JYLegoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF465C02824B67800A2AC73 /* Debug */,
+				3DF465C12824B67800A2AC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DF465A32824B67500A2AC73 /* Project object */;
+}
