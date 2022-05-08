@@ -19,7 +19,7 @@
 		3D437B0F282764BE008F814F /* JYPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0E282764BE008F814F /* JYPerson.swift */; };
 		3D6D25F2282602C0008A7D22 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F1282602C0008A7D22 /* Section.swift */; };
 		3D6D25F428261B2A008A7D22 /* Lego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F328261B2A008A7D22 /* Lego.swift */; };
-		3D6D25F628261BAA008A7D22 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F528261BAA008A7D22 /* Item.swift */; };
+		3D6D25F628261BAA008A7D22 /* CollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F528261BAA008A7D22 /* CollectionViewCellViewModel.swift */; };
 		3D6D25F828261BC2008A7D22 /* ItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */; };
 		3D6D260D28262148008A7D22 /* SectionHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */; };
 		3D6D260F282621A5008A7D22 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */; };
@@ -48,7 +48,7 @@
 		3D437B0E282764BE008F814F /* JYPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYPerson.swift; sourceTree = "<group>"; };
 		3D6D25F1282602C0008A7D22 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		3D6D25F328261B2A008A7D22 /* Lego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lego.swift; sourceTree = "<group>"; };
-		3D6D25F528261BAA008A7D22 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3D6D25F528261BAA008A7D22 /* CollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilder.swift; sourceTree = "<group>"; };
 		3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderViewModel.swift; sourceTree = "<group>"; };
 		3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 				3D437B02282671B0008F814F /* VCViewModel.swift */,
 				3D437B0E282764BE008F814F /* JYPerson.swift */,
 				3D6D26122826618E008A7D22 /* Core */,
-				3D6D25F528261BAA008A7D22 /* Item.swift */,
+				3D6D25F528261BAA008A7D22 /* CollectionViewCellViewModel.swift */,
 				3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */,
 				3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */,
 				3D6D2610282643C0008A7D22 /* CollectionViewCell.swift */,
@@ -213,7 +213,7 @@
 				3DF465B32824B67600A2AC73 /* ViewController.swift in Sources */,
 				3D6D25F428261B2A008A7D22 /* Lego.swift in Sources */,
 				3D437B052827446F008F814F /* LegoRender.swift in Sources */,
-				3D6D25F628261BAA008A7D22 /* Item.swift in Sources */,
+				3D6D25F628261BAA008A7D22 /* CollectionViewCellViewModel.swift in Sources */,
 				3D437B07282746D7008F814F /* StateObject.swift in Sources */,
 				3D6D260D28262148008A7D22 /* SectionHeaderViewModel.swift in Sources */,
 				3D437AF728266379008F814F /* LegoRenderProtocol.swift in Sources */,

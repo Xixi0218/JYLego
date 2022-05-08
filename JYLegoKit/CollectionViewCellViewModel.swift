@@ -1,5 +1,5 @@
 //
-//  Item.swift
+//  CollectionViewCellViewModel.swift
 //  JYLegoKit
 //
 //  Created by keyon on 2022/5/7.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Item: CellViewModelProtocol, LegoObservableObject {
+class CollectionViewCellViewModel: CellViewModelProtocol, LegoObservableObject {
     
     @LegoPublished var person = JYPerson()
     

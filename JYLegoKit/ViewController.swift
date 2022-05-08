@@ -16,8 +16,8 @@ class ViewController: UIViewController, LegoContainer {
             }.sectionHeader(SectionHeaderViewModel())
             if viewModel.flag {
                 Section {
-                    Item()
-                    Item()
+                    CollectionViewCellViewModel()
+                    CollectionViewCellViewModel()
                 }.sectionHeader(SectionHeaderViewModel())
             }
         }

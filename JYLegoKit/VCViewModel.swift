@@ -9,18 +9,17 @@ import UIKit
 
 class VCViewModel: LegoObservableObject {
     
-    @LegoPublished var items = [Item]()
+    @LegoPublished var items = [CollectionViewCellViewModel]()
     @LegoPublished var flag = true
-    @LegoPublished var person = JYPerson()
     
     func requestData() {
         for _ in 0..<5 {
-            items.append(Item())
+            items.append(CollectionViewCellViewModel())
         }
     }
     
     func buttonClick() {
-        person = JYPerson()
+        items.append(CollectionViewCellViewModel())
     }
     
     func flagButtonClick() {
@@ -29,7 +28,6 @@ class VCViewModel: LegoObservableObject {
     
     func personClick() {
         items.first?.person.name = "Keyon"
-//        person.name = "Keyon"
     }
     
 }
