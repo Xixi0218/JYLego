@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SectionHeaderViewModel: ReusableViewModelProtocol {
+class SectionHeaderViewModel: KYLegoReusableViewModelProtocol {
     
     func viewSize() -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 40)

@@ -7,56 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D437AF728266379008F814F /* LegoRenderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AF628266379008F814F /* LegoRenderProtocol.swift */; };
-		3D437AF9282663B9008F814F /* CellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AF8282663B9008F814F /* CellProtocol.swift */; };
-		3D437AFF2826640C008F814F /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AFE2826640C008F814F /* ReusableViewProtocol.swift */; };
+		3D437AF728266379008F814F /* KYLegoRenderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AF628266379008F814F /* KYLegoRenderProtocol.swift */; };
+		3D437AF9282663B9008F814F /* KYLegoCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AF8282663B9008F814F /* KYLegoCellProtocol.swift */; };
+		3D437AFF2826640C008F814F /* KYLegoReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437AFE2826640C008F814F /* KYLegoReusableViewProtocol.swift */; };
 		3D437B03282671B0008F814F /* VCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B02282671B0008F814F /* VCViewModel.swift */; };
-		3D437B052827446F008F814F /* LegoRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B042827446F008F814F /* LegoRender.swift */; };
-		3D437B07282746D7008F814F /* StateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B06282746D7008F814F /* StateObject.swift */; };
-		3D437B09282748C8008F814F /* LegoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B08282748C8008F814F /* LegoContainer.swift */; };
-		3D437B0B28274988008F814F /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0A28274988008F814F /* ObservableObject.swift */; };
-		3D437B0D28275FEC008F814F /* LegoPublished.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0C28275FEC008F814F /* LegoPublished.swift */; };
+		3D437B052827446F008F814F /* KYLegoRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B042827446F008F814F /* KYLegoRender.swift */; };
+		3D437B07282746D7008F814F /* KYLegoStateObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B06282746D7008F814F /* KYLegoStateObject.swift */; };
+		3D437B09282748C8008F814F /* KYLegoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B08282748C8008F814F /* KYLegoContainer.swift */; };
+		3D437B0B28274988008F814F /* KYLegoObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0A28274988008F814F /* KYLegoObservableObject.swift */; };
+		3D437B0D28275FEC008F814F /* KYLegoPublished.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0C28275FEC008F814F /* KYLegoPublished.swift */; };
 		3D437B0F282764BE008F814F /* JYPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D437B0E282764BE008F814F /* JYPerson.swift */; };
 		3D699F5B28E1A7B70013FE9F /* CombineExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D699F5A28E1A7B70013FE9F /* CombineExtension.swift */; };
-		3D6D25F2282602C0008A7D22 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F1282602C0008A7D22 /* Section.swift */; };
-		3D6D25F428261B2A008A7D22 /* Lego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F328261B2A008A7D22 /* Lego.swift */; };
+		3D6D25F2282602C0008A7D22 /* KYLegoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F1282602C0008A7D22 /* KYLegoSection.swift */; };
+		3D6D25F428261B2A008A7D22 /* KYLego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F328261B2A008A7D22 /* KYLego.swift */; };
 		3D6D25F628261BAA008A7D22 /* CollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F528261BAA008A7D22 /* CollectionViewCellViewModel.swift */; };
-		3D6D25F828261BC2008A7D22 /* ItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */; };
+		3D6D25F828261BC2008A7D22 /* KYLegoItemBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D25F728261BC2008A7D22 /* KYLegoItemBuilder.swift */; };
 		3D6D260D28262148008A7D22 /* SectionHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */; };
 		3D6D260F282621A5008A7D22 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */; };
 		3D6D2611282643C0008A7D22 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D2610282643C0008A7D22 /* CollectionViewCell.swift */; };
-		3D6D261428266251008A7D22 /* CellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D261328266251008A7D22 /* CellViewModelProtocol.swift */; };
-		3D6D2616282662C4008A7D22 /* ReusableViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D2615282662C4008A7D22 /* ReusableViewModelProtocol.swift */; };
+		3D6D261428266251008A7D22 /* KYLegoCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D261328266251008A7D22 /* KYLegoCellViewModelProtocol.swift */; };
+		3D6D2616282662C4008A7D22 /* KYLegoReusableViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6D2615282662C4008A7D22 /* KYLegoReusableViewModelProtocol.swift */; };
 		3DF465AF2824B67600A2AC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465AE2824B67600A2AC73 /* AppDelegate.swift */; };
 		3DF465B12824B67600A2AC73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465B02824B67600A2AC73 /* SceneDelegate.swift */; };
 		3DF465B32824B67600A2AC73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465B22824B67600A2AC73 /* ViewController.swift */; };
 		3DF465B62824B67600A2AC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF465B42824B67600A2AC73 /* Main.storyboard */; };
 		3DF465B82824B67800A2AC73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF465B72824B67800A2AC73 /* Assets.xcassets */; };
 		3DF465BB2824B67800A2AC73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DF465B92824B67800A2AC73 /* LaunchScreen.storyboard */; };
-		3DF465C32824BA5100A2AC73 /* SectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465C22824BA5100A2AC73 /* SectionBuilder.swift */; };
+		3DF465C32824BA5100A2AC73 /* KYLegoSectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF465C22824BA5100A2AC73 /* KYLegoSectionBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3D437AF628266379008F814F /* LegoRenderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoRenderProtocol.swift; sourceTree = "<group>"; };
-		3D437AF8282663B9008F814F /* CellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocol.swift; sourceTree = "<group>"; };
-		3D437AFE2826640C008F814F /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		3D437AF628266379008F814F /* KYLegoRenderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoRenderProtocol.swift; sourceTree = "<group>"; };
+		3D437AF8282663B9008F814F /* KYLegoCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoCellProtocol.swift; sourceTree = "<group>"; };
+		3D437AFE2826640C008F814F /* KYLegoReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoReusableViewProtocol.swift; sourceTree = "<group>"; };
 		3D437B02282671B0008F814F /* VCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCViewModel.swift; sourceTree = "<group>"; };
-		3D437B042827446F008F814F /* LegoRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoRender.swift; sourceTree = "<group>"; };
-		3D437B06282746D7008F814F /* StateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObject.swift; sourceTree = "<group>"; };
-		3D437B08282748C8008F814F /* LegoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoContainer.swift; sourceTree = "<group>"; };
-		3D437B0A28274988008F814F /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
-		3D437B0C28275FEC008F814F /* LegoPublished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegoPublished.swift; sourceTree = "<group>"; };
+		3D437B042827446F008F814F /* KYLegoRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoRender.swift; sourceTree = "<group>"; };
+		3D437B06282746D7008F814F /* KYLegoStateObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoStateObject.swift; sourceTree = "<group>"; };
+		3D437B08282748C8008F814F /* KYLegoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoContainer.swift; sourceTree = "<group>"; };
+		3D437B0A28274988008F814F /* KYLegoObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoObservableObject.swift; sourceTree = "<group>"; };
+		3D437B0C28275FEC008F814F /* KYLegoPublished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoPublished.swift; sourceTree = "<group>"; };
 		3D437B0E282764BE008F814F /* JYPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYPerson.swift; sourceTree = "<group>"; };
 		3D699F5A28E1A7B70013FE9F /* CombineExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineExtension.swift; sourceTree = "<group>"; };
-		3D6D25F1282602C0008A7D22 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
-		3D6D25F328261B2A008A7D22 /* Lego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lego.swift; sourceTree = "<group>"; };
+		3D6D25F1282602C0008A7D22 /* KYLegoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoSection.swift; sourceTree = "<group>"; };
+		3D6D25F328261B2A008A7D22 /* KYLego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLego.swift; sourceTree = "<group>"; };
 		3D6D25F528261BAA008A7D22 /* CollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellViewModel.swift; sourceTree = "<group>"; };
-		3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBuilder.swift; sourceTree = "<group>"; };
+		3D6D25F728261BC2008A7D22 /* KYLegoItemBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoItemBuilder.swift; sourceTree = "<group>"; };
 		3D6D260C28262148008A7D22 /* SectionHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderViewModel.swift; sourceTree = "<group>"; };
 		3D6D260E282621A5008A7D22 /* CollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReusableView.swift; sourceTree = "<group>"; };
 		3D6D2610282643C0008A7D22 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		3D6D261328266251008A7D22 /* CellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModelProtocol.swift; sourceTree = "<group>"; };
-		3D6D2615282662C4008A7D22 /* ReusableViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewModelProtocol.swift; sourceTree = "<group>"; };
+		3D6D261328266251008A7D22 /* KYLegoCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		3D6D2615282662C4008A7D22 /* KYLegoReusableViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoReusableViewModelProtocol.swift; sourceTree = "<group>"; };
 		3DF465AB2824B67600A2AC73 /* JYLegoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYLegoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF465AE2824B67600A2AC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DF465B02824B67600A2AC73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		3DF465B72824B67800A2AC73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DF465BA2824B67800A2AC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DF465BC2824B67800A2AC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DF465C22824BA5100A2AC73 /* SectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBuilder.swift; sourceTree = "<group>"; };
+		3DF465C22824BA5100A2AC73 /* KYLegoSectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYLegoSectionBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,20 +82,20 @@
 		3D6D26122826618E008A7D22 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				3D6D25F328261B2A008A7D22 /* Lego.swift */,
-				3D6D25F1282602C0008A7D22 /* Section.swift */,
-				3DF465C22824BA5100A2AC73 /* SectionBuilder.swift */,
-				3D6D261328266251008A7D22 /* CellViewModelProtocol.swift */,
-				3D6D25F728261BC2008A7D22 /* ItemBuilder.swift */,
-				3D437AF8282663B9008F814F /* CellProtocol.swift */,
-				3D437AFE2826640C008F814F /* ReusableViewProtocol.swift */,
-				3D6D2615282662C4008A7D22 /* ReusableViewModelProtocol.swift */,
-				3D437AF628266379008F814F /* LegoRenderProtocol.swift */,
-				3D437B042827446F008F814F /* LegoRender.swift */,
-				3D437B08282748C8008F814F /* LegoContainer.swift */,
-				3D437B06282746D7008F814F /* StateObject.swift */,
-				3D437B0A28274988008F814F /* ObservableObject.swift */,
-				3D437B0C28275FEC008F814F /* LegoPublished.swift */,
+				3D6D25F328261B2A008A7D22 /* KYLego.swift */,
+				3D6D25F1282602C0008A7D22 /* KYLegoSection.swift */,
+				3DF465C22824BA5100A2AC73 /* KYLegoSectionBuilder.swift */,
+				3D6D261328266251008A7D22 /* KYLegoCellViewModelProtocol.swift */,
+				3D6D25F728261BC2008A7D22 /* KYLegoItemBuilder.swift */,
+				3D437AF8282663B9008F814F /* KYLegoCellProtocol.swift */,
+				3D437AFE2826640C008F814F /* KYLegoReusableViewProtocol.swift */,
+				3D6D2615282662C4008A7D22 /* KYLegoReusableViewModelProtocol.swift */,
+				3D437AF628266379008F814F /* KYLegoRenderProtocol.swift */,
+				3D437B042827446F008F814F /* KYLegoRender.swift */,
+				3D437B08282748C8008F814F /* KYLegoContainer.swift */,
+				3D437B06282746D7008F814F /* KYLegoStateObject.swift */,
+				3D437B0A28274988008F814F /* KYLegoObservableObject.swift */,
+				3D437B0C28275FEC008F814F /* KYLegoPublished.swift */,
 				3D699F5A28E1A7B70013FE9F /* CombineExtension.swift */,
 			);
 			path = Core;
@@ -210,29 +210,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D437B03282671B0008F814F /* VCViewModel.swift in Sources */,
-				3D437AFF2826640C008F814F /* ReusableViewProtocol.swift in Sources */,
+				3D437AFF2826640C008F814F /* KYLegoReusableViewProtocol.swift in Sources */,
 				3D6D260F282621A5008A7D22 /* CollectionReusableView.swift in Sources */,
-				3D6D2616282662C4008A7D22 /* ReusableViewModelProtocol.swift in Sources */,
+				3D6D2616282662C4008A7D22 /* KYLegoReusableViewModelProtocol.swift in Sources */,
 				3DF465B32824B67600A2AC73 /* ViewController.swift in Sources */,
-				3D6D25F428261B2A008A7D22 /* Lego.swift in Sources */,
-				3D437B052827446F008F814F /* LegoRender.swift in Sources */,
+				3D6D25F428261B2A008A7D22 /* KYLego.swift in Sources */,
+				3D437B052827446F008F814F /* KYLegoRender.swift in Sources */,
 				3D6D25F628261BAA008A7D22 /* CollectionViewCellViewModel.swift in Sources */,
-				3D437B07282746D7008F814F /* StateObject.swift in Sources */,
+				3D437B07282746D7008F814F /* KYLegoStateObject.swift in Sources */,
 				3D6D260D28262148008A7D22 /* SectionHeaderViewModel.swift in Sources */,
-				3D437AF728266379008F814F /* LegoRenderProtocol.swift in Sources */,
+				3D437AF728266379008F814F /* KYLegoRenderProtocol.swift in Sources */,
 				3D699F5B28E1A7B70013FE9F /* CombineExtension.swift in Sources */,
-				3D437B0D28275FEC008F814F /* LegoPublished.swift in Sources */,
+				3D437B0D28275FEC008F814F /* KYLegoPublished.swift in Sources */,
 				3D6D2611282643C0008A7D22 /* CollectionViewCell.swift in Sources */,
-				3D437B09282748C8008F814F /* LegoContainer.swift in Sources */,
-				3DF465C32824BA5100A2AC73 /* SectionBuilder.swift in Sources */,
-				3D6D261428266251008A7D22 /* CellViewModelProtocol.swift in Sources */,
-				3D437B0B28274988008F814F /* ObservableObject.swift in Sources */,
+				3D437B09282748C8008F814F /* KYLegoContainer.swift in Sources */,
+				3DF465C32824BA5100A2AC73 /* KYLegoSectionBuilder.swift in Sources */,
+				3D6D261428266251008A7D22 /* KYLegoCellViewModelProtocol.swift in Sources */,
+				3D437B0B28274988008F814F /* KYLegoObservableObject.swift in Sources */,
 				3D437B0F282764BE008F814F /* JYPerson.swift in Sources */,
 				3DF465AF2824B67600A2AC73 /* AppDelegate.swift in Sources */,
 				3DF465B12824B67600A2AC73 /* SceneDelegate.swift in Sources */,
-				3D6D25F2282602C0008A7D22 /* Section.swift in Sources */,
-				3D6D25F828261BC2008A7D22 /* ItemBuilder.swift in Sources */,
-				3D437AF9282663B9008F814F /* CellProtocol.swift in Sources */,
+				3D6D25F2282602C0008A7D22 /* KYLegoSection.swift in Sources */,
+				3D6D25F828261BC2008A7D22 /* KYLegoItemBuilder.swift in Sources */,
+				3D437AF9282663B9008F814F /* KYLegoCellProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

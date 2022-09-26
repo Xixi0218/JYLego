@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-class CollectionViewCell: UICollectionViewCell, CellProtocol {
+class CollectionViewCell: UICollectionViewCell, KYLegoCellProtocol {
 
     private var cancelables = Set<AnyCancellable>()
 
@@ -25,7 +25,7 @@ class CollectionViewCell: UICollectionViewCell, CellProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func updateCellViewModel(cellViewModel: CellViewModelProtocol) {
+    func updateCellViewModel(cellViewModel: KYLegoCellViewModelProtocol) {
         guard let cellVM = cellViewModel as? CollectionViewCellViewModel else { return }
         cellVM.person.$name.assign(on: titleLabel, to: \.text).store(in: &cancelables)
     }

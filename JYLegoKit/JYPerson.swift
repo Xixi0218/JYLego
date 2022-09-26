@@ -9,5 +9,5 @@ import UIKit
 import Combine
 
 class JYPerson {
-    @LegoPublished var name = "test"
+    @KYLegoPublished var name = "test"
 }

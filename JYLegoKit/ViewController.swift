@@ -7,15 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController, LegoContainer {
+class ViewController: UIViewController, KYLegoContainer {
 
-    var lego: Lego {
-        Lego {
-            Section {
+    var lego: KYLego {
+        KYLego {
+            KYLegoSection {
                 viewModel.items
             }.sectionHeader(SectionHeaderViewModel())
             if viewModel.flag {
-                Section {
+                KYLegoSection {
                     CollectionViewCellViewModel()
                     CollectionViewCellViewModel()
                 }.sectionHeader(SectionHeaderViewModel())
@@ -23,9 +23,9 @@ class ViewController: UIViewController, LegoContainer {
         }
     }
     
-    @StateObject private var viewModel = VCViewModel()
-    lazy var legoRenderer: LegoRender = {
-        let render = LegoRender(lego: lego)
+    @KYLegoStateObject private var viewModel = VCViewModel()
+    lazy var legoRenderer: KYLegoRender = {
+        let render = KYLegoRender(lego: lego)
         return render
     }()
     

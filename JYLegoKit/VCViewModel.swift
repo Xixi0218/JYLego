@@ -7,10 +7,10 @@
 
 import UIKit
 
-class VCViewModel: LegoObservableObject {
+class VCViewModel: KYLegoObservableObject {
     
-    @LegoPublished var items = [CollectionViewCellViewModel]()
-    @LegoPublished var flag = true
+    @KYLegoPublished var items = [CollectionViewCellViewModel]()
+    @KYLegoPublished var flag = true
     
     func requestData() {
         for _ in 0..<5 {

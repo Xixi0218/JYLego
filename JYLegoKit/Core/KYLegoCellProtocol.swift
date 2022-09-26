@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol CellProtocol {
+protocol KYLegoCellProtocol {
     func cellDelegate(delegate: AnyObject?)
-    func updateCellViewModel(cellViewModel: CellViewModelProtocol)
+    func updateCellViewModel(cellViewModel: KYLegoCellViewModelProtocol)
 }
 
-extension CellProtocol {
+extension KYLegoCellProtocol {
     func cellDelegate(delegate: AnyObject?) { }
 }

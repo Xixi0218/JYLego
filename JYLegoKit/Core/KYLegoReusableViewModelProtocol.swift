@@ -7,14 +7,14 @@
 
 import UIKit
 
-protocol ReusableViewModelProtocol {
+protocol KYLegoReusableViewModelProtocol {
     func viewSize() -> CGSize
     func viewClass() -> AnyClass
     func viewIdentifier() -> String
     func viewKind() -> String
 }
 
-extension ReusableViewModelProtocol {
+extension KYLegoReusableViewModelProtocol {
     func viewIdentifier() -> String {
         return NSStringFromClass(viewClass())
     }

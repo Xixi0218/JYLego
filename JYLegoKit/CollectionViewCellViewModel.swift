@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionViewCellViewModel: CellViewModelProtocol {
+class CollectionViewCellViewModel: KYLegoCellViewModelProtocol {
     
     var person = JYPerson()
     

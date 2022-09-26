@@ -7,19 +7,19 @@
 
 import UIKit
 
-class LegoRender: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class KYLegoRender: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    private(set) var lego: Lego
-    weak var delegate: LegoRenderProtocol?
+    private(set) var lego: KYLego
+    weak var delegate: KYLegoRenderProtocol?
     private var cellIdentifier = Set<String>()
     private var reusableViewIdentifier = Set<String>()
     
-    init(lego: Lego, delegate: LegoRenderProtocol? = nil) {
+    init(lego: KYLego, delegate: KYLegoRenderProtocol? = nil) {
         self.lego = lego
         self.delegate = delegate
     }
     
-    func reloadData(lego: Lego) {
+    func reloadData(lego: KYLego) {
         self.lego = lego
         self.collectionView.reloadData()
     }
@@ -39,7 +39,7 @@ class LegoRender: NSObject, UICollectionViewDelegate, UICollectionViewDataSource
             collectionView.register(cellViewModel.cellClass(), forCellWithReuseIdentifier: NSStringFromClass(cellViewModel.cellClass()))
         }
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellViewModel.cellIdentifier(), for: indexPath)
-        if let cell = cell as? CellProtocol {
+        if let cell = cell as? KYLegoCellProtocol {
             cell.cellDelegate(delegate: delegate)
             cell.updateCellViewModel(cellViewModel: cellViewModel)
         }
@@ -60,14 +60,14 @@ class LegoRender: NSObject, UICollectionViewDelegate, UICollectionViewDataSource
         return reusableView
     }
     
-    private func createReusableView(with viewModel: ReusableViewModelProtocol, collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionReusableView {
+    private func createReusableView(with viewModel: KYLegoReusableViewModelProtocol, collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionReusableView {
         let identifier = viewModel.viewKind() + viewModel.viewIdentifier()
         if !reusableViewIdentifier.contains(identifier) {
             reusableViewIdentifier.insert(identifier)
             collectionView.register(viewModel.viewClass(), forSupplementaryViewOfKind: viewModel.viewKind(), withReuseIdentifier: viewModel.viewIdentifier())
         }
         let reusableView = collectionView.dequeueReusableSupplementaryView(ofKind: viewModel.viewKind(), withReuseIdentifier: viewModel.viewIdentifier(), for: indexPath)
-        if let reusableView = reusableView as? ReusableViewProtocol {
+        if let reusableView = reusableView as? KYLegoReusableViewProtocol {
             reusableView.viewDelegate(delegate: delegate)
             reusableView.updateViewModel(viewModel: viewModel)
         }

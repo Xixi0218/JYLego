@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 @propertyWrapper
-struct StateObject<Value> {
+struct KYLegoStateObject<Value> {
     
     @available(*, unavailable,
                message: "This property wrapper can only be applied to ``LegoContainer``")
@@ -21,8 +21,8 @@ struct StateObject<Value> {
     private var cancelAbles = Set<AnyCancellable>()
     
     private class Box {
-        weak var container: LegoContainer?
-        weak var observer: LegoObservableObject?
+        weak var container: KYLegoContainer?
+        weak var observer: KYLegoObservableObject?
     }
     
     private var storage: Value
@@ -32,7 +32,7 @@ struct StateObject<Value> {
         self.storage = wrappedValue
     }
     
-    private mutating func bind(to instance: LegoContainer, storage: LegoObservableObject) {
+    private mutating func bind(to instance: KYLegoContainer, storage: KYLegoObservableObject) {
         guard box.container !== instance else { return }
         box.container = instance
         storage.objectDidChange.sink { [box] _ in
@@ -46,11 +46,11 @@ struct StateObject<Value> {
     static subscript<T>(
         _enclosingInstance instance: T,
         wrapped wrappedKeyPath: ReferenceWritableKeyPath<T, Value>,
-        storage storageKeyPath: ReferenceWritableKeyPath<T, StateObject>
+        storage storageKeyPath: ReferenceWritableKeyPath<T, KYLegoStateObject>
     ) -> Value {
         get {
             let storage = instance[keyPath: storageKeyPath].storage
-            if let storage = storage as? LegoObservableObject, let value = instance as? LegoContainer {
+            if let storage = storage as? KYLegoObservableObject, let value = instance as? KYLegoContainer {
                 instance[keyPath: storageKeyPath].bind(to: value, storage: storage)
             }
             return storage

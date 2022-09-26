@@ -7,13 +7,13 @@
 
 import UIKit
 
-class CollectionReusableView: UICollectionReusableView, ReusableViewProtocol {
+class CollectionReusableView: UICollectionReusableView, KYLegoReusableViewProtocol {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .red
     }
     
-    func updateViewModel(viewModel: ReusableViewModelProtocol) {
+    func updateViewModel(viewModel: KYLegoReusableViewModelProtocol) {
         
     }
     

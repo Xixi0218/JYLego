@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 @propertyWrapper
-struct LegoPublished<Value> {
+struct KYLegoPublished<Value> {
     
     public static subscript<T: AnyObject>(
         _enclosingInstance instance: T,
@@ -21,7 +21,7 @@ struct LegoPublished<Value> {
         }
         set {
             instance[keyPath: storageKeyPath].wrappedValue = newValue
-            if let object = instance as? LegoObservableObject {
+            if let object = instance as? KYLegoObservableObject {
                 object.objectDidChange.send()
             }
         }

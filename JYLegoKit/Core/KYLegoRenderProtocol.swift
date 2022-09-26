@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol LegoRenderProtocol: AnyObject {
+protocol KYLegoRenderProtocol: AnyObject {
     func flowLayout() -> UICollectionViewLayout
     func scrollViewDidScroll(_ scrollView: UIScrollView)
 }
 
-extension LegoRenderProtocol {
+extension KYLegoRenderProtocol {
     func scrollViewDidScroll(_ scrollView: UIScrollView) { }
     func flowLayout() -> UICollectionViewLayout {
         return UICollectionViewFlowLayout()

@@ -7,11 +7,11 @@
 
 import UIKit
 
-struct Lego {
+struct KYLego {
     
-    private(set) var sections: [Section]
+    private(set) var sections: [KYLegoSection]
     
-    init(@SectionBuilder sections: () -> [Section]) {
+    init(@KYLegoSectionBuilder sections: () -> [KYLegoSection]) {
         self.sections = sections()
     }
 }

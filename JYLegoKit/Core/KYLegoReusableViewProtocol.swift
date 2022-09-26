@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol ReusableViewProtocol {
+protocol KYLegoReusableViewProtocol {
     func viewDelegate(delegate: AnyObject?)
-    func updateViewModel(viewModel: ReusableViewModelProtocol)
+    func updateViewModel(viewModel: KYLegoReusableViewModelProtocol)
 }
 
-extension ReusableViewProtocol {
+extension KYLegoReusableViewProtocol {
     func viewDelegate(delegate: AnyObject?) { }
 }
 

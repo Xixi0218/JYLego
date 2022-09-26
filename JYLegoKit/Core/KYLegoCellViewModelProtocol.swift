@@ -7,13 +7,13 @@
 
 import UIKit
 
-protocol CellViewModelProtocol: AnyObject {
+protocol KYLegoCellViewModelProtocol: AnyObject {
     func cellSize() -> CGSize
     func cellClass() -> AnyClass
     func cellIdentifier() -> String
 }
 
-extension CellViewModelProtocol {
+extension KYLegoCellViewModelProtocol {
     func cellIdentifier() -> String {
         return NSStringFromClass(cellClass())
     }

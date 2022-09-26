@@ -8,7 +8,7 @@
 import UIKit
 import Combine
 
-protocol LegoObservableObject: AnyObject {
+protocol KYLegoObservableObject: AnyObject {
     var objectDidChange: PassthroughSubject<Void, Never> { get }
 }
 
@@ -16,7 +16,7 @@ private enum AssociatedKeys {
     static var publisher = "LegoKit.ObjectDidChangePublisher"
 }
 
-extension LegoObservableObject {
+extension KYLegoObservableObject {
     var objectDidChange: PassthroughSubject<Void, Never> {
         var publisher = objc_getAssociatedObject(self, &AssociatedKeys.publisher) as? PassthroughSubject<Void, Never>
         if publisher == nil {
