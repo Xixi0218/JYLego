@@ -6,24 +6,10 @@
 //
 
 import UIKit
-
-class ObjectDidChangePublisher {
-    private var currentID: Int = 0
-    private(set) var actions: [Int: () -> ()] = [:]
-
-    public func send() {
-        actions.forEach { $0.value() }
-    }
-
-    func observe(_ action: @escaping () -> ()) {
-        let id = currentID
-        currentID += 1
-        actions[id] = action
-    }
-}
+import Combine
 
 protocol LegoObservableObject: AnyObject {
-    var objectDidChange: ObjectDidChangePublisher { get }
+    var objectDidChange: PassthroughSubject<Void, Never> { get }
 }
 
 private enum AssociatedKeys {
@@ -31,8 +17,8 @@ private enum AssociatedKeys {
 }
 
 extension LegoObservableObject {
-    var objectDidChange: ObjectDidChangePublisher {
-        var publisher = objc_getAssociatedObject(self, &AssociatedKeys.publisher) as? ObjectDidChangePublisher
+    var objectDidChange: PassthroughSubject<Void, Never> {
+        var publisher = objc_getAssociatedObject(self, &AssociatedKeys.publisher) as? PassthroughSubject<Void, Never>
         if publisher == nil {
             publisher = .init()
             objc_setAssociatedObject(self, &AssociatedKeys.publisher, publisher, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)

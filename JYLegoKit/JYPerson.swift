@@ -6,7 +6,8 @@
 //
 
 import UIKit
+import Combine
 
-class JYPerson: LegoObservableObject {
+class JYPerson {
     @LegoPublished var name = "test"
 }

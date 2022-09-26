@@ -6,21 +6,28 @@
 //
 
 import UIKit
+import Combine
 
 class CollectionViewCell: UICollectionViewCell, CellProtocol {
-    
+
+    private var cancelables = Set<AnyCancellable>()
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(titleLabel)
     }
-    
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+    }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     func updateCellViewModel(cellViewModel: CellViewModelProtocol) {
         guard let cellVM = cellViewModel as? CollectionViewCellViewModel else { return }
-        titleLabel.text = cellVM.person.name
+        cellVM.person.$name.assign(on: titleLabel, to: \.text).store(in: &cancelables)
     }
     
     private lazy var titleLabel: UILabel = {

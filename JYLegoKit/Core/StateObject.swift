@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 @propertyWrapper
 struct StateObject<Value> {
@@ -16,6 +17,8 @@ struct StateObject<Value> {
         get { fatalError() }
         set { fatalError() }
     }
+
+    private var cancelAbles = Set<AnyCancellable>()
     
     private class Box {
         weak var container: LegoContainer?
@@ -29,26 +32,15 @@ struct StateObject<Value> {
         self.storage = wrappedValue
     }
     
-    private func bind(to instance: LegoContainer, storage: LegoObservableObject) {
+    private mutating func bind(to instance: LegoContainer, storage: LegoObservableObject) {
         guard box.container !== instance else { return }
         box.container = instance
-        storage.objectDidChange.observe {
+        storage.objectDidChange.sink { [box] _ in
             guard let container = box.container else {
                 return
             }
             container.legoRenderer.reloadData(lego: container.lego)
-        }
-    }
-    
-    private func bind(to instance: LegoObservableObject, storage: LegoObservableObject) {
-        guard box.observer !== instance else { return }
-        box.observer = instance
-        storage.objectDidChange.observe {
-            guard let observer = box.observer else {
-                return
-            }
-            observer.objectDidChange.send()
-        }
+        }.store(in: &cancelAbles)
     }
     
     static subscript<T>(
@@ -61,9 +53,6 @@ struct StateObject<Value> {
             if let storage = storage as? LegoObservableObject, let value = instance as? LegoContainer {
                 instance[keyPath: storageKeyPath].bind(to: value, storage: storage)
             }
-//            if let storage = storage as? LegoObservableObject, let value = instance as? LegoObservableObject {
-//                instance[keyPath: storageKeyPath].bind(to: value, storage: storage)
-//            }
             return storage
         }
         set {

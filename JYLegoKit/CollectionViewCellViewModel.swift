@@ -7,9 +7,9 @@
 
 import UIKit
 
-class CollectionViewCellViewModel: CellViewModelProtocol, LegoObservableObject {
+class CollectionViewCellViewModel: CellViewModelProtocol {
     
-    @LegoPublished var person = JYPerson()
+    var person = JYPerson()
     
     func cellSize() -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 300)

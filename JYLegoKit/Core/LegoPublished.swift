@@ -6,48 +6,37 @@
 //
 
 import UIKit
+import Combine
 
 @propertyWrapper
 struct LegoPublished<Value> {
     
-    public static subscript<T: LegoObservableObject>(
+    public static subscript<T: AnyObject>(
         _enclosingInstance instance: T,
         wrapped wrappedKeyPath: ReferenceWritableKeyPath<T, Value>,
         storage storageKeyPath: ReferenceWritableKeyPath<T, Self>
     ) -> Value {
         get {
-            if let storage = instance[keyPath: storageKeyPath].storage as? LegoObservableObject, storage.objectDidChange.actions.isEmpty {
-                storage.objectDidChange.observe {
-                    instance.objectDidChange.send()
-                }
-            }
-            return instance[keyPath: storageKeyPath].storage
+            return instance[keyPath: storageKeyPath].wrappedValue
         }
         set {
-            if let storage = instance[keyPath: storageKeyPath].storage as? [LegoObservableObject] {
-                for item in storage {
-                    if item.objectDidChange.actions.isEmpty {
-                        item.objectDidChange.observe {
-                            instance.objectDidChange.send()
-                        }
-                    }
-                }
+            instance[keyPath: storageKeyPath].wrappedValue = newValue
+            if let object = instance as? LegoObservableObject {
+                object.objectDidChange.send()
             }
-            instance[keyPath: storageKeyPath].storage = newValue
-            instance.objectDidChange.send()
         }
     }
 
-    @available(*, unavailable,
-               message: "@LegoPublished can only be applied to classes")
     public var wrappedValue: Value {
-        get { fatalError() }
-        set { fatalError() }
+        didSet {
+            projectedValue.send(wrappedValue)
+        }
     }
-
-    private var storage: Value
+    public var projectedValue: CurrentValueSubject<Value, Never>
 
     public init(wrappedValue: Value) {
-        storage = wrappedValue
+        self.wrappedValue = wrappedValue
+        self.projectedValue = .init(wrappedValue)
     }
+
 }
