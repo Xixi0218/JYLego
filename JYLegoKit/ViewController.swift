@@ -11,14 +11,18 @@ class ViewController: UIViewController, KYLegoContainer {
 
     var lego: KYLego {
         KYLego {
-            KYLegoSection {
+            
+            KYLegoSection(items: {
                 viewModel.items
-            }.sectionHeader(SectionHeaderViewModel())
+            }, header: SectionHeaderViewModel(), layout: layout)
+            
             if viewModel.flag {
-                KYLegoSection {
+                
+                KYLegoSection(items: {
                     CollectionViewCellViewModel()
                     CollectionViewCellViewModel()
-                }.sectionHeader(SectionHeaderViewModel())
+                }, header: SectionHeaderViewModel(), layout: layout)
+                
             }
         }
     }
@@ -42,7 +46,7 @@ class ViewController: UIViewController, KYLegoContainer {
     }
     
     @objc private func flagButtonClick() {
-        viewModel.personClick()
+        viewModel.flagButtonClick()
     }
     
     override func viewDidLayoutSubviews() {
@@ -63,6 +67,23 @@ class ViewController: UIViewController, KYLegoContainer {
         button.backgroundColor = .yellow
         button.addTarget(self, action: #selector(flagButtonClick), for: .touchUpInside)
         return button
+    }()
+    
+    private lazy var layout: NSCollectionLayoutSection = {
+        let layoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(44))
+        let item = NSCollectionLayoutItem(layoutSize: layoutSize)
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: layoutSize, subitem: item, count: 1)
+        let section = NSCollectionLayoutSection(group: group)
+        let headerItem = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1),
+                heightDimension: .absolute(44)
+            ),
+            elementKind: UICollectionView.elementKindSectionHeader,
+            alignment: .top
+        )
+        section.boundarySupplementaryItems = [headerItem]
+        return section
     }()
 }
 

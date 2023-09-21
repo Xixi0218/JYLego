@@ -7,17 +7,13 @@
 
 import UIKit
 
-class SectionHeaderViewModel: KYLegoReusableViewModelProtocol {
+class SectionHeaderViewModel: KYReusableModelProtocol {
     
-    func viewSize() -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 40)
-    }
-    
-    func viewClass() -> AnyClass {
+    func resuableClass() -> AnyClass {
         return CollectionReusableView.self
     }
     
-    func viewKind() -> String {
+    func resuableKind() -> String {
         return UICollectionView.elementKindSectionHeader
     }
     

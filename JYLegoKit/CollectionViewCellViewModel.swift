@@ -7,13 +7,14 @@
 
 import UIKit
 
-class CollectionViewCellViewModel: KYLegoCellViewModelProtocol {
+class CollectionViewCellViewModel: KYCellModelProtocol {
     
     var person = JYPerson()
     
     func cellSize() -> CGSize {
         return CGSize(width: UIScreen.main.bounds.width, height: 300)
     }
+    
     func cellClass() -> AnyClass {
         CollectionViewCell.self
     }
